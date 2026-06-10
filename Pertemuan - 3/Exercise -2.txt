@@ -1,0 +1,24 @@
+age = float(input("Enter age : "))
+
+print ()
+
+if age <=1:
+    print("Baby")
+elif age <= 3:
+    print("Toddler")
+elif age <= 4:
+    print("Preschooler")
+elif age <= 12:
+    print("Child")
+elif age <= 17:
+    print("Teenager")
+elif age <= 21:
+    print("Young Adult")
+elif age <= 30:
+    print("Pre-adult")
+elif age <= 50:
+    print("Adult")
+elif age <= 70:
+    print("Pre-elderly")
+else:
+    print("Elderly")
