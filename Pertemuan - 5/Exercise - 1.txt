@@ -1,0 +1,48 @@
+def print_identity():
+    print("---------------------")
+    print("|   Elysia Angana   |")
+    print("|     Jakarta       |")
+    print("---------------------")
+
+
+def calculate(a=1, b=1):
+    return {
+        "+": a + b,
+        "-": a - b,
+        "*": a * b,
+        "/": a / b,
+        "%": a % b
+    }
+
+
+print_identity()
+print()
+while True:
+    menu = input("Enter Menu (+|-|/|*|%|stop): ")
+
+    if menu == "stop":
+        print("Program stopped. Thank you for using my program.")
+        break
+
+    value1 = int(input("Enter Value 1: "))
+    value2 = int(input("Enter Value 2: "))
+
+    result = calculate(value1, value2)
+
+    if menu == "+":
+        print("The result of addition", value1, "+", value2, "is", result["+"])
+
+    elif menu == "-":
+        print("The result of subtraction", value1, "-", value2, "is", result["-"])
+
+    elif menu == "*":
+        print("The result of multiplication", value1, "*", value2, "is", result["*"])
+
+    elif menu == "/":
+        print("The result of division", value1, "/", value2, "is", result["/"])
+
+    elif menu == "%":
+        print("The result of modulus", value1, "%", value2, "is", result["%"])
+
+    else:
+        print("Invalid menu!")
