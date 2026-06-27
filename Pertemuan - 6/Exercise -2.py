@@ -1,4 +1,4 @@
-class student:
+class Student:
     "Common base class for all student"
     
     def __init__(self, name=None, major=None, IP=None):
@@ -29,7 +29,7 @@ class student:
         self.major = None
         self.IP = None
 
-student = student()
+student = Student()
 
 print("\n===== OOP Program =====")
 print("1. Declare Object")
@@ -45,9 +45,7 @@ while True:
         name = input("Enter Name: ")
         major = input("Enter Major: ")
         IP = float(input("Enter IP: "))
-        student.setName(name)
-        student.setMajor(major)
-        student.setIP(IP)
+        student = Student(name, major, IP)
         print("Data Successfully Added")
 
     elif menu == "2":
